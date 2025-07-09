@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# IDE-specific files (e.g., for VS Code)
+.vscode/
+
+# Output directories for models and data
+# 我們不希望將大型模型檔或資料集本身上傳到 Git
+output/
+whisper-small-zh-finetune-final/
+whisper-small-zh-finetune-performance/
+whisper-small-zh-finetune-stable/
+
+Taiwanese-speech-recognition/
+
+standard/
+standard_json/
+downloaded_files/
+sound_file.ipynb
+standard.txt
+standard.zip
+standard_json.zip
