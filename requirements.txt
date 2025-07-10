@@ -30,3 +30,4 @@ tensorboard
 ipykernel
 
 # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 pytorch需要另外安裝 要看你符合得版本
+jiwer
