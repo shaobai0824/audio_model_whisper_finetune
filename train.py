@@ -74,11 +74,11 @@ def compute_metrics(pred, tokenizer):
 # ==============================================================================
 def main():
     # --- 參數設定 ---
-    CSV_PATH = 'output/final_audio_paths.csv'
+    CSV_PATH = 'output/final_audio_paths_zh.csv'
     MODEL_NAME = "openai/whisper-small"
     LANGUAGE = "zh"
     TASK = "transcribe"
-    OUTPUT_DIR = "./whisper-small-zh-finetune-final"
+    OUTPUT_DIR = "./whisper-small-zh-finetune-zh_full"
 
     # --- 載入 Processor 和模型 ---
     print("--- 步驟 1/4: 載入 Processor 和模型 ---")
@@ -129,7 +129,7 @@ def main():
         gradient_accumulation_steps=4,
         
         # 3. 禁用多核心處理，這是確保程式不被掛起的關鍵
-        dataloader_num_workers=0,
+        dataloader_num_workers=4,
         
         # --- 其他參數維持不變 ---
         learning_rate=1e-5,

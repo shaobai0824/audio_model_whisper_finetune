@@ -10,13 +10,14 @@ __pycache__/
 
 # Output directories for models and data
 # 我們不希望將大型模型檔或資料集本身上傳到 Git
-output/
+
 whisper-small-zh-finetune-final/
 whisper-small-zh-finetune-performance/
 whisper-small-zh-finetune-stable/
 whisper-small-zh-finetune-prototype/
 Taiwanese-speech-recognition/
-
+whisper-small-zh-finetune-zh_full/
+whisper-small-zh-finetune-zh/
 standard/
 standard_json/
 downloaded_files/

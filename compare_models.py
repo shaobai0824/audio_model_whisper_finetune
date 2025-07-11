@@ -61,7 +61,10 @@ def compare_whisper_models(fine_tuned_model_path, original_model_name, test_audi
     print(f"==> {transcription_original}\n")
     
     print(f"您的微調模型辨識結果：")
-    print(f"==> {transcription_fine_tuned}")
+    print(f"==> {transcription_fine_tuned}\n")
+
+    # print(f"原本的中文:")
+    # print("你怎麼這麼厲害")
     print("======================================================")
 
 
@@ -70,13 +73,13 @@ if __name__ == '__main__':
     
     # 您訓練好的模型的本地資料夾路徑
     # 這應該是您在 TrainingArguments 中設定的 output_dir
-    MY_FINE_TUNED_MODEL_PATH = "./whisper-small-zh-finetune-prototype" # 或者 prototype 版本
+    MY_FINE_TUNED_MODEL_PATH = "./whisper-small-zh-finetune-zh" # 或者 prototype 版本
     
     # 原始模型的名稱
     ORIGINAL_MODEL_NAME = "openai/whisper-small"
     
     # 您用來測試的音訊檔案路徑
-    TEST_AUDIO_FILE = "test_wav/3d1e1fcf-be10-4eae-b7e6-48b063869ed2.wav" # 請替換成您自己的檔案名
+    TEST_AUDIO_FILE = "test_wav/5c2cd39f-54c8-46a8-b401-ff29b6590955.wav" # 請替換成您自己的檔案名
 
     # 執行比較
     compare_whisper_models(
