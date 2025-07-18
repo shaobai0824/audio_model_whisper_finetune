@@ -4,7 +4,7 @@
 # Python cache files
 __pycache__/
 *.pyc
-
+*.csv
 # IDE-specific files (e.g., for VS Code)
 .vscode/
 
@@ -25,3 +25,8 @@ sound_file.ipynb
 standard.txt
 standard.zip
 standard_json.zip
+audio_files/
+*.wav
+*.mp3
+test_wav/
+*.zip
